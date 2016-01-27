@@ -1,0 +1,11 @@
+This is a basic Play2 application for demonstrating how useful, easy and fun to code with Play Framework.
+
+It stars with a simple index screen identical to DVLA's vehicle query screen (https://www.gov.uk/get-vehicle-information-from-dvla)
+
+Once the "Start Now" button is pressed it will take you to search screen where you will be prompted to enter the plate number
+ and the make of the car you want to search. Note that the application does not use any database and the sample cars are stored and
+ read from vehicles.txt file on the root level.
+
+Upon completion of the required fields the app will bring you the basic information for the car, if found, or will display error message.
+
+There is a small testing via Scala Specs2 covering the functionality of the search with plate number and make of the car.

@@ -1,0 +1,18 @@
+@(vehicleForm: Form[SearchDVLAForm])(implicit messages: Messages)
+@import helper._
+
+<html>
+    <head>
+        <title>DVLA Information</title>
+    </head>
+    <body>
+        @form(routes.DVLAController.findVehicleInformation()) {
+            @inputText(vehicleForm("Plate Number"))
+            @inputText(vehicleForm("Make"))
+
+            <div class="buttons">
+                <input type="submit" value="Search"/>
+            </div>
+        </body>
+</html>
+}

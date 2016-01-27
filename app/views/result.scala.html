@@ -1,0 +1,21 @@
+@import model.Vehicle
+@(foundVehicle: Vehicle)(implicit messages: Messages)
+
+<html>
+    <head>
+        <title>DVLA Search Result</title>
+    </head>
+    <body>
+        <div>
+            <h2>Matched Vehicle Info</h2>
+            <label>plate: @foundVehicle.plateNo</label><br/>
+            <label>make: @foundVehicle.make</label><br/>
+            <label>color: @foundVehicle.color</label><br/>
+            <label>engine size: @foundVehicle.engineSize</label><br/>
+            <label>registration date: @foundVehicle.registrationDate</label><br/>
+            <label>cylinder size: @foundVehicle.cylinder</label><br/>
+        </div>
+
+    </body>
+</html>
+
